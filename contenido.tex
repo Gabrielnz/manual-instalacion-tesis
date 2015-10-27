@@ -1,0 +1,322 @@
+\null
+\vfill
+
+\section{Requerimientos del sistema}
+
+\subsection{Requerimientos de hardware}
+
+	\begin{itemize}
+		\item Procesador de 1 gigahertz (GHz) o superior.
+		
+		\item 1 gigabyte (GB) de memoria RAM o m\'{a}s.
+		
+		\item Resoluci\'{o}n de pantalla de 800x600 o superior.
+	\end{itemize}
+	
+\subsection{Requerimientos de arquitectura}
+
+	\begin{itemize}
+		\item Arquitectura de 32 bits o de 64 bits.
+	\end{itemize}
+
+\subsection{Requerimientos del sistema operativo}
+
+	\begin{itemize}
+		\item Sistema operativo Microsoft Windows 7 Service Pack 1 o superior.
+	\end{itemize}
+	
+\subsection{Requerimientos de software}
+
+	\begin{itemize}
+		\item Microsoft .NET framework 4 o superior.
+		
+		\item Microsoft Internet Explorer 10 o superior (s\'{o}lo para Windows 7).
+	\end{itemize}
+
+\newpage
+
+\section{Instalaciones previas al Spectrasoft}
+
+	\subsection{MSXP-CFLX Utility}
+	
+	Instale el paquete MSXEUtil132B, ejecut\'{a}ndolo como administrador y dejando todas las opciones de instalaci\'{o}n por defecto.
+	
+	\subsection{Visual Studio}
+	
+	La versi\'{o}n que se debe instalar es Visual Studio 2013 community/professional/ultimate, o Visual Studio 2015 community/professional. Ejecute la instalaci\'{o}n como administrador y deje todas las opciones de instalaci\'{o}n por defecto.
+	
+	\subsection{PostgreSQL}
+	
+	La versi\'{o}n que se debe instalar es PostgreSQL 9.4.4-3 o superior. Ejecute la instalaci\'{o}n como administrador, deje todas las opciones de instalaci\'{o}n por defecto y anote la contrase\~{n}a que haya introducido durante el proceso de instalaci\'{o}n.
+
+\newpage
+
+\section{Configuraciones previas al Spectrasoft}
+
+	\subsection{Visual Studio}
+	
+	Copie la carpeta <<MSXEBridge>> en el disco local C, en la ruta <<C:\textbackslash>>. Ejecute el software Visual Studio como administrador (v\'{e}ase la figura \ref{fig:vs-inicio}).	
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-inicio.jpg}
+\caption[Vista de inicio de Visual Studio]{Vista de inicio de Visual Studio\label{fig:vs-inicio}}
+\end{figure}
+
+En el men\'{u} <<ARCHIVO>> entre al submen\'{u} <<Abrir>> y haga click en la opci\'{o}n <<Proyecto o soluci\'{o}n...>> (v\'{e}ase la figura \ref{fig:vs-abrir}).	
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-proyecto-abrir.jpg}
+\caption[Abrir proyecto]{Abrir proyecto\label{fig:vs-abrir}}
+\end{figure}
+
+\newpage
+
+En carpeta <<MSXEBridge>> ubicada en el disco local <<C:\textbackslash>>, seleccione el archivo <<MSXEBridge>> y haga click en el bot\'{o}n <<Abrir>> (v\'{e}ase la figura \ref{fig:vs-abrir-buscar}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-abrir-buscar.jpg}
+\caption[Buscar el archivo MSXEBridge]{Buscar el archivo MSXEBridge\label{fig:vs-abrir-buscar}}
+\end{figure}
+
+En la parte derecha de Visual Studio, haga click con el bot\'{o}n derecho en <<MSXEBridge>> y seleccione la opci\'{o}n <<Propiedades>> (v\'{e}ase la figura \ref{fig:vs-propiedades}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.7\linewidth]{./img/vs-propiedades.jpg}
+\caption[Propiedades de MSXEBridge]{Propiedades de MSXEBridge\label{fig:vs-propiedades}}
+\end{figure}
+
+\newpage
+
+Haga click al bot\'{o}n <<Informaci\'{o}n de ensamblado...>>, aseg\'{u}rese de que la opci\'{o}n <<Crear ensamblado visible a trav\'{e}s de COM>> est\'{e} seleccionada, y haga click en el bot\'{o}n <<Aceptar>> (v\'{e}ase la figura \ref{fig:vs-ensamblado}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.75\linewidth]{./img/vs-ensamblado.jpg}
+\caption[Ensamblado de MSXEBridge]{Ensamblado de MSXEBridge\label{fig:vs-ensamblado}}
+\end{figure}
+
+Haga click en la pesta\~{n}a <<Compilar>> y aseg\'{u}rese de que la opci\'{o}n <<Registrar para interoperabilidad COM>> est\'{e} seleccionada (v\'{e}ase la figura \ref{fig:vs-compilar}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.75\linewidth]{./img/vs-compilar.jpg}
+\caption[Interoperabilidad de MSXEBridge]{Interoperabilidad de MSXEBridge\label{fig:vs-compilar}}
+\end{figure}
+
+\newpage
+
+En el men\'{u} <<COMPILAR>>, haga click en la opci\'{o}n <<Compilar soluci\'{o}n>> est\'{e} seleccionada (v\'{e}ase la figura \ref{fig:vs-compilar-solucion}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/vs-compilar-solucion.jpg}
+\caption[Compilar MSXEBridge]{Compilar MSXEBridge\label{fig:vs-compilar-solucion}}
+\end{figure}
+
+En la parte inferior de Visual Studio podr\'{a} ver que la compilaci\'{o}n finaliz\'{o} correctamente (v\'{e}ase la figura \ref{fig:vs-resultados}). Por \'{u}ltimo, cierre el software Visual Studio.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/vs-resultados.jpg}
+\caption[Resultados de la compilaci\'{o}n]{Resultados de la compilaci\'{o}n\label{fig:vs-resultados}}
+\end{figure}
+
+Es importante destacar que los pasos seguidos previamente s\'{o}lo se deben realizar una vez, y no es necesario que ejecute Visual Studio posteriormente para ejecutar el Spectrasoft.
+
+\newpage
+
+	\subsection{PostgreSQL}
+	
+Ejecute el software pgAdmin como administrador (v\'{e}ase la figura \ref{fig:pgadmin-inicio}).
+	
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/pgadmin-inicio.jpg}
+\caption[Vista de inicio de pgAdmin]{Vista de inicio de pgAdmin\label{fig:pgadmin-inicio}}
+\end{figure}
+
+Para accesar al servidor, haga doble click en la opci\'{o}n <<PostgreSQL (localhost:5432)>>, e introduzca la contrase\~{n}a que estableci\'{o} durante el proceso de instalaci\'{o}n (v\'{e}ase la figura \ref{fig:pgadmin-acceso}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/pgadmin-acceso.jpg}
+\caption[Acceso al servidor]{Acceso al servidor\label{fig:pgadmin-acceso}}
+\end{figure}
+
+\newpage
+
+Haga click derecho en el men\'{u} <<Login Roles>> y seleccione la opci\'{o}n <<New Login Role...>> (v\'{e}ase la figura \ref{fig:pgadmin-rol}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/pgadmin-rol.jpg}
+\caption[Crear nuevo rol]{Crear nuevo rol\label{fig:pgadmin-rol}}
+\end{figure}
+
+Introduzca <<CIMBUC>> como el nombre del rol (v\'{e}ase la figura \ref{fig:pgadmin-rol-nombre}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.5\linewidth]{./img/pgadmin-rol-nombre.jpg}
+\caption[Nombre del rol]{Nombre del rol\label{fig:pgadmin-rol-nombre}}
+\end{figure}
+
+Introduzca <<CIMBUC>> como la contrase\~{n}a del rol (v\'{e}ase la figura \ref{fig:pgadmin-rol-clave}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{./img/pgadmin-rol-clave.jpg}
+\caption[Contrase\~{n}a del rol]{Contrase\~{n}a del rol\label{fig:pgadmin-rol-clave}}
+\end{figure}
+
+Seleccione todas las opciones de privilegios disponibles para el rol, y haga click en el bot\'{o}n <<OK>> (v\'{e}ase la figura \ref{fig:pgadmin-rol-privilegios}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.45\linewidth]{./img/pgadmin-rol-privilegios.jpg}
+\caption[Privilegios del rol]{Privilegios del rol\label{fig:pgadmin-rol-privilegios}}
+\end{figure}
+
+\newpage
+
+Haga click derecho en el men\'{u} <<Databases>> y seleccione la opci\'{o}n <<New Database...>> (v\'{e}ase la figura \ref{fig:pgadmin-bd}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/pgadmin-bd.jpg}
+\caption[Crear nueva base de datos]{Crear nueva base de datos\label{fig:pgadmin-bd}}
+\end{figure}
+
+Introduzca <<CIMBUC>> como el nombre de la base de datos y haga click en el bot\'{o}n <<OK>> (v\'{e}ase la figura \ref{fig:pgadmin-bd-nombre}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.5\linewidth]{./img/pgadmin-bd-nombre.jpg}
+\caption[Nombre de la base de datos]{Nombre de la base de datos\label{fig:pgadmin-bd-nombre}}
+\end{figure}
+
+\newpage
+
+Haga click derecho en la base de datos <<CIMBUC>> y seleccione la opci\'{o}n <<Restore...>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/pgadmin-restaurar.jpg}
+\caption[Opci\'{o}n de restauraci\'{o}n de la base de datos]{Opci\'{o}n de restauraci\'{o}n de la base de datos\label{fig:pgadmin-restaurar}}
+\end{figure}
+
+\newpage
+
+Seleccione la opci\'{o}n <<...>> para buscar el archivo de respaldo de la base de datos (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-ventana}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/pgadmin-restaurar-ventana.jpg}
+\caption[Ventana de restauraci\'{o}n de la base de datos]{Ventana de restauraci\'{o}n de la base de datos\label{fig:pgadmin-restaurar-ventana}}
+\end{figure}
+
+Busque y seleccione el archivo <<spectradb.backup>> y haga click en el bot\'{o}n <<Abrir>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-buscar}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{./img/pgadmin-restaurar-buscar.jpg}
+\caption[Buscar el archivo de respaldo]{Buscar el archivo de respaldo\label{fig:pgadmin-restaurar-buscar}}
+\end{figure}
+
+\newpage
+
+De vuelta a la ventana de restauraci\'{o}n, haga click en la lista desplegable de <<Rolename>> y seleccione la opci\'{o}n <<CIMBUC>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-rol}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/pgadmin-restaurar-rol.jpg}
+\caption[Rol de restauraci\'{o}n de la base de datos]{Rol de restauraci\'{o}n de la base de datos\label{fig:pgadmin-restaurar-rol}}
+\end{figure}
+
+Haga click en la pesta\~{n}a <<Restore Optiones \#1>> y en el grupo <<Sections>> seleccione las opciones <<Pre-data>>, <<Data>> y <<Post-data>>, luego haga click en el bot\'{o}n <<Restore>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-opciones}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/pgadmin-restaurar-opciones.jpg}
+\caption[Opciones de restauraci\'{o}n de la base de datos]{Opciones de restauraci\'{o}n de la base de datos\label{fig:pgadmin-restaurar-opciones}}
+\end{figure}
+
+\newpage
+
+En la misma ventana haga click en bot\'{o}n <<Done>>, y por \'{u}ltimo cierre el software pgAdmin (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-listo}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/pgadmin-restaurar-listo.jpg}
+\caption[Restauraci\'{o}n de la base de datos completa]{Restauraci\'{o}n de la base de datos completa\label{fig:pgadmin-restaurar-listo}}
+\end{figure}
+
+Es importante destacar que los pasos seguidos previamente s\'{o}lo se deben realizar una vez, y no es necesario que ejecute pgAdmin posteriormente para ejecutar el Spectrasoft.
+
+La base de datos posee un usuario administrador por defecto para iniciar sesi\'{o}n y trabajar con el Spectrasoft, sus datos de ingreso son los siguientes: 
+
+\begin{itemize}
+	\item \textbf{C\'{e}dula de identidad:} V00000000
+	
+	\item \textbf{Contrase\~{n}a:} 12345Admin
+\end{itemize}
+
+Luego de iniciar sesi\'{o}n en el Spectrasoft con este usuario, puede crear otro usuario administrador de su preferencia y eliminar este.
+
+\section{Instalaci\'{o}n del Spectrasoft}
+
+Ejecute el instalador <<setup-spectrasoft>> y haga click en el bot\'{o}n <<Next>>, dejando todas las opciones por defecto hasta llegar al acuerdo de licencia (v\'{e}ase la figura \ref{fig:spectrasoft-setup}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.5\linewidth]{./img/spectrasoft-setup.jpg}
+\caption[Instalador del Spectrasoft]{Instalador del Spectrasoft\label{fig:spectrasoft-setup}}
+\end{figure}
+
+En la ventana <<License Agreement>>, seleccione la opci\'{o}n <<I accept the license>> y haga click en el bot\'{o}n <<Next>> (v\'{e}ase la figura \ref{fig:spectrasoft-licencia}). Deje las siguientes opciones por defecto hasta llegar la opci\'{o}n de instalar.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.5\linewidth]{./img/spectrasoft-licencia.jpg}
+\caption[Licencia del Spectrasoft]{Licencia del Spectrasoft\label{fig:spectrasoft-licencia}}
+\end{figure}
+
+\newpage
+
+En la ventana <<Ready to Install>> haga click en el bot\'{o}n <<Install>> (v\'{e}ase la figura \ref{fig:spectrasoft-instalar}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/spectrasoft-instalar.jpg}
+\caption[Instalar el Spectrasoft]{Instalar el Spectrasoft\label{fig:spectrasoft-instalar}}
+\end{figure}
+
+En la ventana <<Completing the Spectrasoft Wizard>> haga click en el bot\'{o}n <<Finish>> (v\'{e}ase la figura \ref{fig:spectrasoft-finalizar}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/spectrasoft-finalizar.jpg}
+\caption[Finalizar la instalaci\'{o}n]{Finalizar la instalaci\'{o}n\label{fig:spectrasoft-finalizar}}
+\end{figure}
+
+\newpage
+
+Por \'{u}ltimo, para ejecutar el Spectrasoft abra el men\'{u} de inicio de Windows y haga click en la opci\'{o}n <<Spectrasoft>> (v\'{e}ase la figura \ref{fig:spectrasoft-ejecutable}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{./img/spectrasoft-ejecutable.jpg}
+\caption[Ejecutar el Spectrasoft]{Ejecutar el Spectrasoft\label{fig:spectrasoft-ejecutable}}
+\end{figure}
+
+Si desea entrar al men\'{u} del Spectrasoft, abra el men\'{u} de inicio de Windows, haga click en la opci\'{o}n <<Todos los programas>>, busque la carpeta llamada <<Spectrasoft>> y seleccionela (v\'{e}ase la figura \ref{fig:spectrasoft-menu}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{./img/spectrasoft-menu.jpg}
+\caption[Men\'{u} del Spectrasoft]{Men\'{u} del Spectrasoft\label{fig:spectrasoft-menu}}
+\end{figure}
