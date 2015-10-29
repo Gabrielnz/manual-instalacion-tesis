@@ -1,5 +1,4 @@
-\null
-\vfill
+\textbf{IMPORTANTE:} Debe leer el manual de principio a fin, y seguir los pasos al pie de la letra en el orden que dicta el mismo. No cumplir esto puede causar la instalaci\'{o}n, configuraci\'{o}n y/o ejecuci\'{o}n defectuosa del producto.
 
 \section{Requerimientos del sistema}
 
@@ -35,31 +34,151 @@
 
 \newpage
 
-\section{Instalaciones previas al Spectrasoft}
+\section{Acciones previas}
 
 	\subsection{Controlador para el adaptador serial-USB}
 	
 	Conecte el MiniScan XE Plus utilizando el cable adaptador serial-USB, luego instale el controlador para el adaptador dejando todas las opciones de instalaci\'{o}n por defecto.
 
-	\subsection{MSXP-CFLX Utility}
+	\subsection{Paquete MSXP-CFLX Utility}
 	
 	Instale el paquete MSXP-CFLX Utility, ejecut\'{a}ndolo como administrador y dejando todas las opciones de instalaci\'{o}n por defecto.
 	
-	\subsection{Visual Studio}
+	\subsection{Carpeta MSXEBridge}
 	
-	La versi\'{o}n que se debe instalar es Visual Studio 2013 community/professional/ultimate, o Visual Studio 2015 community/professional. Ejecute la instalaci\'{o}n como administrador y deje todas las opciones de instalaci\'{o}n por defecto.
+	Copie la carpeta <<MSXEBridge>> en el disco local C, en la ruta <<C:\textbackslash>>.
 	
-	\subsection{PostgreSQL}
+\section{Versiones de los paquetes a instalar}
+
+\begin{itemize}
+	\item Visual Studio 2013 community/professional/ultimate.
 	
-	La versi\'{o}n que se debe instalar es PostgreSQL 9.4.4-3 o superior. Ejecute la instalaci\'{o}n como administrador, deje todas las opciones de instalaci\'{o}n por defecto y anote la contrase\~{n}a que haya introducido durante el proceso de instalaci\'{o}n.
+	\item PostgreSQL 9.4.4-3.
+\end{itemize}
 
 \newpage
 
-\section{Configuraciones previas al Spectrasoft}
-
-	\subsection{Visual Studio}
+\section{Instalaci\'{o}n de Visual Studio}
 	
-	Copie la carpeta <<MSXEBridge>> en el disco local C, en la ruta <<C:\textbackslash>>. Ejecute el software Visual Studio como administrador (v\'{e}ase la figura \ref{fig:vs-inicio}).	
+Ejecute la instalaci\'{o}n de Visual Studio como administrador. Seleccione la opci\'{o}n <<Acepto los t\'{e}rminos de licencia y la declaraci\'{o}n de privacidad.>> y haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:vs-instalacion1}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-instalacion1.jpg}
+\caption[Inicio de instalaci\'{o}n de Visual Studio]{Inicio de instalaci\'{o}n de Visual Studio\label{fig:vs-instalacion1}}
+\end{figure}
+\newpage
+Deje todas las opciones por defecto de <<Caracter\'{i}sticas opcionales para instalar:>> y haga click en el bot\'{o}n <<INSTALAR>> (v\'{e}ase la figura \ref{fig:vs-instalacion2}).	
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-instalacion2.jpg}
+\caption[Caracter\'{i}sticas opcionales de Visual Studio]{Caracter\'{i}sticas opcionales de Visual Studio\label{fig:vs-instalacion2}}
+\end{figure}
+\newpage
+Espere a que el proceso de instalaci\'{o}n finalice (v\'{e}ase la figura \ref{fig:vs-instalacion3}).	
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-instalacion3.jpg}
+\caption[Progreso de la instalaci\'{o}n de Visual Studio]{Progreso de la instalaci\'{o}n de Visual Studio\label{fig:vs-instalacion3}}
+\end{figure}
+\newpage
+Despu\'{e}s de finalizar la instalaci\'{o}n, no inicie Visual Studio, haga click en el bot\'{o}n con forma de equis (x) en la esquina superior para cerrar la ventana (v\'{e}ase la figura \ref{fig:vs-instalacion4}).	
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/vs-instalacion4.jpg}
+\caption[Cerrar ventana de instalaci\'{o}n de Visual Studio]{Cerrar ventana de instalaci\'{o}n de Visual Studio\label{fig:vs-instalacion4}}
+\end{figure}
+
+\newpage
+
+\section{Instalaci\'{o}n de PostgreSQL}
+	
+Ejecute la instalaci\'{o}n de PostgreSQL como administrador. Haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:postgres1}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/postgres1.jpg}
+\caption[Inicio de instalaci\'{o}n de PostgreSQL]{Inicio de instalaci\'{o}n de PostgreSQL\label{fig:postgres1}}
+\end{figure}
+
+Deje la ubicaci\'{o}n del directorio de instalaci\'{o}n por defecto y haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:postgres2}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/postgres2.jpg}
+\caption[Directorio de instalaci\'{o}n de PostgreSQL]{Directorio de instalaci\'{o}n de PostgreSQL\label{fig:postgres2}}
+\end{figure}
+
+\newpage
+
+Deje la ubicaci\'{o}n del directorio de datos por defecto y haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:postgres3}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/postgres3.jpg}
+\caption[Inicio de datos de PostgreSQL]{Inicio de datos de PostgreSQL\label{fig:postgres3}}
+\end{figure}
+
+Introduzca una contrase\~{n}a de su preferencia, an\'{o}tela para que no la pierda y haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:postgres4}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/postgres4.jpg}
+\caption[Contrase\~{n}a para el superusuario de PostgreSQL]{Contrase\~{n}a para el superusuario de PostgreSQL\label{fig:postgres4}}
+\end{figure}
+
+\newpage
+
+Deje el n\'{u}mero del puerto por defecto y haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:postgres5}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/postgres5.jpg}
+\caption[N\'{u}mero de puerto para PostgreSQL]{N\'{u}mero de puerto para PostgreSQL\label{fig:postgres5}}
+\end{figure}
+
+Deje la configuraci\'{o}n regional por defecto y haga click en el bot\'{o}n <<Siguiente>> (v\'{e}ase la figura \ref{fig:postgres6}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{./img/postgres6.jpg}
+\caption[Configuraci\'{o}n regional para PostgreSQL]{Configuraci\'{o}n regional para PostgreSQL\label{fig:postgres6}}
+\end{figure}
+
+\newpage
+
+Haga click en el bot\'{o}n <<Siguiente>> para empezar el proceso de instalaci\'{o}n y espere a que finalice (v\'{e}ase las figuras \ref{fig:postgres7} y \ref{fig:postgres8}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.7\linewidth]{./img/postgres7.jpg}
+\caption[Inicio de la instalaci\'{o}n de PostgreSQL]{Inicio de la instalaci\'{o}n de PostgreSQL\label{fig:postgres7}}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.7\linewidth]{./img/postgres8.jpg}
+\caption[Proceso de instalaci\'{o}n de PostgreSQL]{Proceso de instalaci\'{o}n de PostgreSQL\label{fig:postgres8}}
+\end{figure}
+
+\newpage
+
+Despu\'{e}s de finalizar la instalaci\'{o}n, aseg\'{u}rese de que la opci\'{o}n <<Lanzar Stack Builder al finalizar>> no este seleccionada, y por \'{u}ltimo haga click en el bot\'{o}n <<Terminar>> (v\'{e}ase la figura \ref{fig:vs-instalacion9}).	
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\linewidth]{./img/postgres9.jpg}
+\caption[Finalizaci\'{o}n de la instalaci\'{o}n de PostgreSQL]{Finalizaci\'{o}n de la instalaci\'{o}n de PostgreSQL\label{fig:vs-instalacion9}}
+\end{figure}
+
+\newpage
+
+\section{Configuraci\'{o}n de Visual Studio}
+	
+	Ejecute el software Visual Studio como administrador. En caso de que al iniciar se le pregunte si desea iniciar sesi\'{o}n, elija la opci\'{o}n <<De momento no, quiz\'{a}s m\'{a}s tarde>> (v\'{e}ase la figura \ref{fig:vs-inicio}).	
 
 \begin{figure}[H]
   \centering
@@ -77,7 +196,7 @@ En el men\'{u} <<ARCHIVO>> entre al submen\'{u} <<Abrir>> y haga click en la opc
 
 \newpage
 
-En carpeta <<MSXEBridge>> ubicada en el disco local <<C:\textbackslash>>, seleccione el archivo <<MSXEBridge>> y haga click en el bot\'{o}n <<Abrir>> (v\'{e}ase la figura \ref{fig:vs-abrir-buscar}).
+En la carpeta <<MSXEBridge>> ubicada en el disco <<C:\textbackslash>>, seleccione el archivo <<MSXEBridge>> y haga click en el bot\'{o}n <<Abrir>> (v\'{e}ase la figura \ref{fig:vs-abrir-buscar}).
 
 \begin{figure}[H]
   \centering
@@ -133,7 +252,7 @@ Es importante destacar que los pasos seguidos previamente s\'{o}lo se deben real
 
 \newpage
 
-	\subsection{PostgreSQL}
+\section{Configuraci\'{o}n de PostgreSQL}
 	
 Ejecute el software pgAdmin como administrador (v\'{e}ase la figura \ref{fig:pgadmin-inicio}).
 	
@@ -161,7 +280,7 @@ Haga click derecho en el men\'{u} <<Login Roles>> y seleccione la opci\'{o}n <<N
 \caption[Crear nuevo rol]{Crear nuevo rol\label{fig:pgadmin-rol}}
 \end{figure}
 
-Introduzca <<CIMBUC>> como el nombre del rol (v\'{e}ase la figura \ref{fig:pgadmin-rol-nombre}).
+Introduzca <<CIMBUC>> en <<Role name>> (v\'{e}ase la figura \ref{fig:pgadmin-rol-nombre}).
 
 \begin{figure}[H]
   \centering
@@ -169,7 +288,7 @@ Introduzca <<CIMBUC>> como el nombre del rol (v\'{e}ase la figura \ref{fig:pgadm
 \caption[Nombre del rol]{Nombre del rol\label{fig:pgadmin-rol-nombre}}
 \end{figure}
 
-Introduzca <<CIMBUC>> como la contrase\~{n}a del rol (v\'{e}ase la figura \ref{fig:pgadmin-rol-clave}).
+Haga click en la pesta\~{n}a <<Definition>> e introduzca <<CIMBUC>> como la contrase\~{n}a del rol (v\'{e}ase la figura \ref{fig:pgadmin-rol-clave}).
 
 \begin{figure}[H]
   \centering
@@ -177,7 +296,7 @@ Introduzca <<CIMBUC>> como la contrase\~{n}a del rol (v\'{e}ase la figura \ref{f
 \caption[Contrase\~{n}a del rol]{Contrase\~{n}a del rol\label{fig:pgadmin-rol-clave}}
 \end{figure}
 
-Seleccione todas las opciones de privilegios disponibles para el rol, y haga click en el bot\'{o}n <<OK>> (v\'{e}ase la figura \ref{fig:pgadmin-rol-privilegios}).
+Haga click en la pesta\~{n}a <<Role privileges>>, seleccione todas las opciones de privilegios disponibles para el rol y haga click en el bot\'{o}n <<OK>> (v\'{e}ase la figura \ref{fig:pgadmin-rol-privilegios}).
 
 \begin{figure}[H]
   \centering
@@ -195,7 +314,7 @@ Haga click derecho en el men\'{u} <<Databases>> y seleccione la opci\'{o}n <<New
 \caption[Crear nueva base de datos]{Crear nueva base de datos\label{fig:pgadmin-bd}}
 \end{figure}
 
-Introduzca <<CIMBUC>> como el nombre de la base de datos y haga click en el bot\'{o}n <<OK>> (v\'{e}ase la figura \ref{fig:pgadmin-bd-nombre}).
+Introduzca <<CIMBUC>> en <<Name>> y haga click en el bot\'{o}n <<OK>> (v\'{e}ase la figura \ref{fig:pgadmin-bd-nombre}).
 
 \begin{figure}[H]
   \centering
@@ -215,7 +334,7 @@ Haga click derecho en la base de datos <<CIMBUC>> y seleccione la opci\'{o}n <<R
 
 \newpage
 
-Seleccione la opci\'{o}n <<...>> para buscar el archivo de respaldo de la base de datos (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-ventana}).
+Haga click en el bot\'{o}n <<...>> para buscar el archivo de respaldo de la base de datos (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-ventana}).
 
 \begin{figure}[H]
   \centering
@@ -223,7 +342,7 @@ Seleccione la opci\'{o}n <<...>> para buscar el archivo de respaldo de la base d
 \caption[Ventana de restauraci\'{o}n de la base de datos]{Ventana de restauraci\'{o}n de la base de datos\label{fig:pgadmin-restaurar-ventana}}
 \end{figure}
 
-Busque y seleccione el archivo <<spectradb.backup>> y haga click en el bot\'{o}n <<Abrir>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-buscar}).
+Busque y seleccione el archivo <<spectradb.backup>>, y haga click en el bot\'{o}n <<Abrir>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-buscar}).
 
 \begin{figure}[H]
   \centering
@@ -241,7 +360,7 @@ De vuelta a la ventana de restauraci\'{o}n, haga click en la lista desplegable d
 \caption[Rol de restauraci\'{o}n de la base de datos]{Rol de restauraci\'{o}n de la base de datos\label{fig:pgadmin-restaurar-rol}}
 \end{figure}
 
-Haga click en la pesta\~{n}a <<Restore Optiones \#1>> y en el grupo <<Sections>> seleccione las opciones <<Pre-data>>, <<Data>> y <<Post-data>>, luego haga click en el bot\'{o}n <<Restore>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-opciones}).
+Haga click en la pesta\~{n}a <<Restore Options \#1>> y en el grupo <<Sections>> seleccione las opciones <<Pre-data>>, <<Data>> y <<Post-data>>, luego haga click en el bot\'{o}n <<Restore>> (v\'{e}ase la figura \ref{fig:pgadmin-restaurar-opciones}).
 
 \begin{figure}[H]
   \centering
